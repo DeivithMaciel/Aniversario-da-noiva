@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.hero{
+    padding-top: 128px;
+    width: 100%;
+    height: 840px;
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/t2/23434788-aniversario-festa-fundo-ilustracao-ai-generativo-gratis-foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @media(max-width:640px){
+        height: 480px;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: 0.4;
+    }
+
+    &__details{
+        text-align: center;
+
+        &__title{
+            line-height: 128px;
+            font-size: 64px;
+        }
+
+        &__contagem{
+            font-size: 48px;
+        }
+        
+        @media (max-width:640px){
+            &__title{
+                line-height: 36px;
+                font-size: 36px;
+                padding-bottom: 16px;
+            }
+            
+            &__contagem{
+                font-size: 36px;
+            }
+        }
+    }
+}
